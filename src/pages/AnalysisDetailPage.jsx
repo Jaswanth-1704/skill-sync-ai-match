@@ -3,14 +3,13 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getResumeAnalysisById } from '@/services/resumeService';
 import AnalysisResult from '@/components/Candidate/AnalysisResult';
-import { ResumeAnalysis } from '@/types';
 import { AlertCircle } from 'lucide-react';
 
 const AnalysisDetailPage = () => {
-  const { id } = useParams<{ id: string }>();
-  const [analysis, setAnalysis] = useState<ResumeAnalysis | null>(null);
+  const { id } = useParams();
+  const [analysis, setAnalysis] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchAnalysis = async () => {
