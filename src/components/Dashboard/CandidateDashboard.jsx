@@ -49,8 +49,8 @@ const CandidateDashboard = () => {
   }
 
   return (
-    <div className="space-y-6 animate-fade-in mx-4 sm:mx-6 md:mx-8">
-      <div className="mb-8">
+    <div className="space-y-6 animate-fade-in px-4 sm:px-6 md:px-8 max-w-6xl mx-auto">
+      <div className="text-center mb-8">
         <h1 className="text-2xl font-bold tracking-tight">Welcome back, {user?.name}</h1>
         <p className="text-gray-500">Here's a summary of your resume analyses</p>
       </div>

@@ -3,7 +3,7 @@ import ResumeUploadForm from "@/components/Candidate/ResumeUploadForm";
 
 const ResumeUploadPage = () => {
   return (
-    <div className="mx-4 sm:mx-6 md:mx-8">
+    <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8">
       <h1 className="text-2xl font-bold mb-6">Resume Analysis</h1>
       <ResumeUploadForm />
     </div>
